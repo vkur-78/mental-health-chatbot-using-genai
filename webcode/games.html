@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Games</title>
+    <style>
+        /* Add your styling for games.html here */
+        body {
+            background-image: url(app.jpg);
+            background-size: cover;
+            font-family: Roboto, sans-serif;
+            background-color: lightblue;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            height: 100vh;
+        }
+
+        /* Header and Navigation Containers */
+        .header-container, .navigation-container {
+            background-color: #693675;
+            color: white;
+            text-align: center;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        /* Ensure header and navigation are at the top */
+        .header-container {
+            border-radius: 0 0 10px 10px; /* Rounded bottom corners for the header */
+        }
+
+        .navigation-container {
+            background-color: #333;
+        }
+
+        /* Content inside Header */
+        .header-container .logo {
+            color: #ffcc00; /* Orange color */
+            font-size: 2rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        /* Navigation Links */
+        .navigation a {
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            font-size: 16px;
+            margin: 0 10px;
+        }
+
+        /* Breathing Exercises Sections Container */
+        .sections-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            width: 90%;
+            margin: 20px auto 0; /* Add margin-top to move sections below header/navigation */
+        }
+
+        .section {
+            border-radius: 10px;
+            text-align: center;
+            width: 200px;
+            height: 200px;
+            cursor: pointer;
+            transition: transform 0.2s ease-in-out;
+            overflow: hidden;
+            background-color: rgba(255, 255, 255, 0.8);
+            margin: 10px;
+        }
+
+        .section img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .section:hover {
+            transform: scale(1.05);
+        }
+
+        .section h2 {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+   <!-- Header Container -->
+   <div class="header-container">
+    <div class="logo">Athena</div>
+</div>
+
+<!-- Navigation Container -->
+<div class="navigation-container">
+    <div class="navigation">
+        <a href="landing.html">Home</a>
+    </div>
+</div>
+    <!-- Games Sections Container -->
+    <div class="sections-container">
+        <!-- Create 3 sections in the first row -->
+        <!-- Section 1 -->
+        <div class="section" onclick="window.location.href='snake_interface.html'">
+            <img src="snake-logo.jpg" alt="Snake Game Logo">
+        </div>
+
+        <!-- Section 2 -->
+        <div class="section" onclick="window.location.href='puzzle_interface.html'">
+            <img src="puzzle-logo.jpg" alt="word puzzle">
+        </div>
+
+        <!-- Section 3 -->
+        <div class="section" onclick="window.location.href='tic toc toe_interface.html'">
+            <img src="tic-tac-toe-logo.jpg" alt="tic toc toe">
+        </div>
+        <div class="section" onclick="window.location.href='game4.html'">
+            <img src="gam5.jpeg" alt="tic toc toe">
+        </div>
+        <div class="section" onclick="window.location.href='game5.html'">
+            <img src="game4.jpeg" alt="tic toc toe">
+        </div>
+    </div>
+</body>
+</html>
